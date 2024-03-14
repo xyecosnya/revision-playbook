@@ -1,8 +1,4 @@
 @echo off
-@REM set version=23.12
-@REM for /f "tokens=2 delims==" %%i in ('wmic os get BuildNumber /value ^| find "="') do set "build=%%i"
-@REM if %build% gtr 19045 ( set "w11=true" )
-
 
 :: Update Health Tools
 msiexec /X{43D501A5-E5E3-46EC-8F33-9E15D2A2CBD5} /qn /norestart >NUL 2>nul
